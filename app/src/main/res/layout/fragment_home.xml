@@ -7,24 +7,160 @@
     tools:context=".Home">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+  <ScrollView
+    android:layout_below="@+id/relatif1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/scroll1" >
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+      <ImageView
         android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:src="@drawable/logo_cic"/>
+
+      <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="70dp"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:textSize="50dp"
+        android:text="E-Book UCIC"/>
+
+      <GridLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:textSize="40dp"
-        android:textColor="#FF0017"
-        android:text="E- BOOK FAHRURROZI  2019102014"/>
-    <TextView
-        android:paddingTop="150dp"
-        android:layout_width="150dp"
-        android:layout_marginLeft="4dp"
-        android:layout_height="wrap_content"
-        android:text="E-Book adalah publikasi buku yang tersedia dalam bentuk digital, terdiri dari teks, gambar, atau keduanya, dapat dibaca di layar komputer layar datar atau perangkat elektronik lainnya."
-        android:textSize="20dp" />
-    <ImageView
-        android:layout_marginTop="145dp"
-        android:layout_width="340dp"
-        android:layout_height="600dp"
-        android:layout_gravity="right"
-        android:src="@drawable/home"/>
+        android:alignmentMode="alignMargins"
+        android:columnCount="2"
+        android:columnOrderPreserved="false"
+        android:rowCount="3">
+
+        <androidx.cardview.widget.CardView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_rowWeight="1"
+          android:layout_columnWeight="1"
+          android:layout_margin="10dp"
+          app:cardCornerRadius="15dp"
+          app:cardElevation="8dp">
+
+          <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10sp">
+
+            <ImageView
+              android:src="@drawable/ic_book"
+              android:layout_width="80dp"
+              android:gravity="center"
+              android:layout_height="80dp" />
+            <TextView
+              android:id="@+id/book"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:text="Book"/>
+
+          </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_rowWeight="1"
+          android:layout_columnWeight="1"
+          android:layout_margin="10dp"
+          app:cardCornerRadius="15dp"
+          app:cardElevation="8dp">
+
+          <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16sp">
+
+            <ImageView
+              android:src="@drawable/ic_category"
+              android:layout_width="80dp"
+              android:gravity="center"
+              android:layout_height="80dp" />
+
+            <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:text="Category"/>
+          </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_rowWeight="1"
+          android:layout_columnWeight="1"
+          android:layout_margin="10dp"
+          app:cardCornerRadius="15dp"
+          app:cardElevation="8dp">
+
+          <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16sp">
+
+            <ImageView
+              android:src="@drawable/ic_start"
+              android:gravity="center"
+              android:layout_width="80dp"
+              android:layout_height="80dp" />
+
+            <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:text="Favorite"/>
+          </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_rowWeight="1"
+          android:layout_columnWeight="1"
+          android:layout_margin="10dp"
+          app:cardCornerRadius="15dp"
+          app:cardElevation="8dp">
+
+          <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16sp">
+
+            <ImageView
+              android:src="@drawable/ic_exit"
+              android:gravity="center"
+              android:layout_width="80dp"
+              android:layout_height="80dp" />
+
+            <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:text="Exit"/>
+          </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+      </GridLayout>
+    </LinearLayout>
+  </ScrollView>
 </FrameLayout>
