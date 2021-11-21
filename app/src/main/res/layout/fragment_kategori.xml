@@ -26,7 +26,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:minHeight="?attr/actionBarSize"
-            android:text="Kategori E- Book"
+            android:text="Category E - Book"
             android:textStyle="bold"
             android:textColor="#039BE5"
             android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
