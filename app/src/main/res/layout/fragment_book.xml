@@ -1,0 +1,922 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Book">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+            android:layout_below="@+id/relatif1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scroll1" >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="On Going !!"/>
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/a"/>
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/b"/>
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/c"/>
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/d" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/e"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+            <TextView
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Daftar Buku Yang Tersedia"/>
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alignmentMode="alignMargins"
+                android:columnCount="2"
+                android:columnOrderPreserved="false"
+                android:rowCount="3">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10sp">
+
+                        <ImageView
+                            android:src="@drawable/game_on"
+                            android:layout_width="80dp"
+                            android:gravity="center"
+                            android:layout_height="80dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Game On: Tempting Twenty-Eight"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Janet Evanovich (2021)"/>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16sp">
+
+                        <ImageView
+                            android:src="@drawable/go_tell"
+                            android:layout_width="80dp"
+                            android:gravity="center"
+                            android:layout_height="80dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Go Tell the Bees That I Am Gone"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Diana Gabaldon (2021)"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16sp">
+
+                        <ImageView
+                            android:src="@drawable/the_sentence"
+                            android:gravity="center"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="The Sentence"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Louise Erdrich (2021)"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16sp">
+
+                        <ImageView
+                            android:src="@drawable/the_dark_hours"
+                            android:gravity="center"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="The Dark Hours"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Michael Connelly (2021)"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10sp">
+
+                        <ImageView
+                            android:src="@drawable/the_1619_project"
+                            android:layout_width="80dp"
+                            android:gravity="center"
+                            android:layout_height="80dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="The 1619 Project Nikole Hannah-Jones"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="The New York Times Magazine (2021)"/>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16sp">
+
+                        <ImageView
+                            android:src="@drawable/mercy"
+                            android:layout_width="80dp"
+                            android:gravity="center"
+                            android:layout_height="80dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Mercy David"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text=" Baldacci (2021)"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16sp">
+
+                        <ImageView
+                            android:src="@drawable/a"
+                            android:gravity="center"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="The Sentence"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Louise Erdrich (2021)"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16sp">
+
+                        <ImageView
+                            android:src="@drawable/b"
+                            android:gravity="center"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="The Dark Hours"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Michael Connelly (2021)"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10sp">
+
+                        <ImageView
+                            android:src="@drawable/c"
+                            android:layout_width="80dp"
+                            android:gravity="center"
+                            android:layout_height="80dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Game On: Tempting Twenty-Eight"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Janet Evanovich (2021)"/>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16sp">
+
+                        <ImageView
+                            android:src="@drawable/d"
+                            android:layout_width="80dp"
+                            android:gravity="center"
+                            android:layout_height="80dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Go Tell the Bees That I Am Gone"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Diana Gabaldon (2021)"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16sp">
+
+                        <ImageView
+                            android:src="@drawable/e"
+                            android:gravity="center"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="The Sentence"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Louise Erdrich (2021)"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16sp">
+
+                        <ImageView
+                            android:src="@drawable/the_dark_hours"
+                            android:gravity="center"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="The Dark Hours"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Michael Connelly (2021)"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10sp">
+
+                        <ImageView
+                            android:src="@drawable/game_on"
+                            android:layout_width="80dp"
+                            android:gravity="center"
+                            android:layout_height="80dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Game On: Tempting Twenty-Eight"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Janet Evanovich (2021)"/>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16sp">
+
+                        <ImageView
+                            android:src="@drawable/go_tell"
+                            android:layout_width="80dp"
+                            android:gravity="center"
+                            android:layout_height="80dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Go Tell the Bees That I Am Gone"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Diana Gabaldon (2021)"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16sp">
+
+                        <ImageView
+                            android:src="@drawable/the_sentence"
+                            android:gravity="center"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="The Sentence"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Louise Erdrich (2021)"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16sp">
+
+                        <ImageView
+                            android:src="@drawable/the_dark_hours"
+                            android:gravity="center"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="The Dark Hours"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Michael Connelly (2021)"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10sp">
+
+                        <ImageView
+                            android:src="@drawable/game_on"
+                            android:layout_width="80dp"
+                            android:gravity="center"
+                            android:layout_height="80dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Game On: Tempting Twenty-Eight"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Janet Evanovich (2021)"/>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16sp">
+
+                        <ImageView
+                            android:src="@drawable/go_tell"
+                            android:layout_width="80dp"
+                            android:gravity="center"
+                            android:layout_height="80dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Go Tell the Bees That I Am Gone"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Diana Gabaldon (2021)"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16sp">
+
+                        <ImageView
+                            android:src="@drawable/the_sentence"
+                            android:gravity="center"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="The Sentence"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Louise Erdrich (2021)"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16sp">
+
+                        <ImageView
+                            android:src="@drawable/the_dark_hours"
+                            android:gravity="center"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="The Dark Hours"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Michael Connelly (2021)"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="10sp">
+
+                        <ImageView
+                            android:src="@drawable/game_on"
+                            android:layout_width="80dp"
+                            android:gravity="center"
+                            android:layout_height="80dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Game On: Tempting Twenty-Eight"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Janet Evanovich (2021)"/>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16sp">
+
+                        <ImageView
+                            android:src="@drawable/go_tell"
+                            android:layout_width="80dp"
+                            android:gravity="center"
+                            android:layout_height="80dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Go Tell the Bees That I Am Gone"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Diana Gabaldon (2021)"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16sp">
+
+                        <ImageView
+                            android:src="@drawable/the_sentence"
+                            android:gravity="center"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="The Sentence"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Louise Erdrich (2021)"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="180dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="16sp">
+
+                        <ImageView
+                            android:src="@drawable/the_dark_hours"
+                            android:gravity="center"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="The Dark Hours"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Michael Connelly (2021)"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
